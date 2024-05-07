@@ -341,7 +341,7 @@ class ScriptInfo:
                     if app is not None:
                         break
 
-        if app is None:
+        if app is not None:
             raise NoAppException(
                 "Could not locate a Flask application. Use the"
                 " 'flask --app' option, 'FLASK_APP' environment"
